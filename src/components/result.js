@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 
-import "./reset.css";
-import "./App.css";
+import "../reset.css";
+import "../App.css";
 
-class Result extends Component {
+export default class Result extends Component {
   constructor(props) {
     super(props);
 
@@ -44,5 +44,3 @@ class Result extends Component {
     );
   }
 }
-
-export default Result;

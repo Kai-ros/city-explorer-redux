@@ -1,13 +1,11 @@
 import React, { Component, Fragment } from "react";
 
-import Search from "./Search.js";
-import Map from "./Map.js";
-import Result from "./Result.js";
+import Result from "./result.js";
 
-import "./reset.css";
-import "./App.css";
+import "../reset.css";
+import "../App.css";
 
-class Main extends Component {
+export default class SearchResults extends Component {
   constructor(props) {
     super(props);
 
@@ -16,9 +14,7 @@ class Main extends Component {
 
   render() {
     return (
-      <Fragment id="main">
-        <Search />
-        <Map />
+      <Fragment>
         <Result />
         <Result />
         <Result />
@@ -28,5 +24,3 @@ class Main extends Component {
     );
   }
 }
-
-export default Main;
