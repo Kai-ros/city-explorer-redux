@@ -2,14 +2,30 @@
 
 Front end for City Explorer app.
 
-Pair Programming Partner: Roman Gebrehiwot
+\*\*Day 1:
 
-Number and name of feature: Components and Forms
+\*\*Pair Programming Partner: Roman Gebrehiwot
 
-Estimate of time needed to complete: 2hrs
+\*\*Number and name of feature: Components and Forms
 
-Start time: 9:30am
+\*\*Estimate of time needed to complete: 2hrs
 
-Finish time: 11am
+\*\*Start time: 9:30am
 
-Actual time needed to complete: 1.5hrs
+\*\*Finish time: 11am
+
+\*\*Actual time needed to complete: 1.5hrs
+
+\*\*Day 2:
+
+\*\*Pair Programming Partners: Melfi Perez and Manish KC
+
+\*\*Number and name of feature: Components and Forms
+
+\*\*Estimate of time needed to complete: 3hrs
+
+\*\*Start time: 9:30am
+
+\*\*Finish time: ??
+
+\*\*Actual time needed to complete: ??

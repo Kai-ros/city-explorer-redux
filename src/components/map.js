@@ -1,12 +1,9 @@
 import React, { Component, Fragment } from "react";
 
-import Header from "./Header.js";
-import Main from "./Main.js";
+import "../reset.css";
+import "../App.css";
 
-import "./reset.css";
-import "./App.css";
-
-class App extends Component {
+export default class Map extends Component {
   constructor(props) {
     super(props);
 
@@ -16,11 +13,8 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Header />
-        <Main />
+        <img src="https://staticmapmaker.com/img/google@2x.png" alt="" />
       </Fragment>
     );
   }
 }
-
-export default App;
