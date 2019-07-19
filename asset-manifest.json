@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/city-explorer-redux/static/css/main.b65633bd.chunk.css",
+    "main.js": "/city-explorer-redux/static/js/main.1b941505.chunk.js",
+    "main.js.map": "/city-explorer-redux/static/js/main.1b941505.chunk.js.map",
+    "runtime~main.js": "/city-explorer-redux/static/js/runtime~main.042ffdc5.js",
+    "runtime~main.js.map": "/city-explorer-redux/static/js/runtime~main.042ffdc5.js.map",
+    "static/js/2.ecbbd85d.chunk.js": "/city-explorer-redux/static/js/2.ecbbd85d.chunk.js",
+    "static/js/2.ecbbd85d.chunk.js.map": "/city-explorer-redux/static/js/2.ecbbd85d.chunk.js.map",
+    "index.html": "/city-explorer-redux/index.html",
+    "precache-manifest.44c0c778cc9dc3c2b4c8ca62a274db25.js": "/city-explorer-redux/precache-manifest.44c0c778cc9dc3c2b4c8ca62a274db25.js",
+    "service-worker.js": "/city-explorer-redux/service-worker.js",
+    "static/css/main.b65633bd.chunk.css.map": "/city-explorer-redux/static/css/main.b65633bd.chunk.css.map"
+  }
+}
