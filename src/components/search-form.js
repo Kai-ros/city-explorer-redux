@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import superagent from "superagent";
 
 import "../reset.css";
 import "../App.css";
@@ -9,38 +8,82 @@ export default class SearchForm extends Component {
     super(props);
 
     this.state = {
-      locationValue: ""
+      view: "initial",
+      locationValue: "",
+      urlValue: ""
     };
   }
 
-  handleChange = event => {
-    this.setState({ locationValue: event.target.value });
+  handleURLChange = event => {
+    this.setState({
+      view: this.state.view,
+      locationValue: this.state.locationValue,
+      urlValue: event.target.value
+    });
   };
 
-  handleSubmit = event => {
-    alert("A location was submitted: " + this.state.locationValue);
+  handleURLSubmit = event => {
     event.preventDefault();
-    // superagent.get("https://swapi.co/api/people/").then(response => {
-    //   console.log(response.body.results);
-    //   this.setState({ results: response.body.results });
-    // });
+    this.props.handleURLSubmit(this.state.urlValue);
+
+    this.setState({
+      view: "location",
+      locationValue: this.state.locationValue,
+      url: this.state.urlValue
+    });
+  };
+
+  handleLocationChange = event => {
+    this.setState({
+      view: this.state.view,
+      locationValue: event.target.value,
+      url: this.state.url
+    });
+  };
+
+  handleLocationSubmit = event => {
+    event.preventDefault();
+    this.props.handleLocationSubmit(this.state.locationValue);
+
+    this.setState({
+      view: "location",
+      locationValue: this.state.locationValue,
+      url: this.state.urlValue
+    });
   };
 
   render() {
-    return (
-      <Fragment>
-        <form>
-          <input
-            type="text"
-            value={this.state.locationValue}
-            onChange={this.handleChange}
-          />
-          <button class="button" onClick={this.handleSubmit}>
-            Submit
-          </button>
-        </form>
-      </Fragment>
-    );
+    if (this.state.view === "initial") {
+      return (
+        <Fragment>
+          <form>
+            <input
+              type="text"
+              onChange={this.handleURLChange}
+              value={this.state.urlValue}
+            />
+            <button className="button" onClick={this.handleURLSubmit}>
+              Submit
+            </button>
+          </form>
+        </Fragment>
+      );
+    } else {
+      return (
+        <Fragment>
+          <form>
+            <input
+              type="text"
+              onChange={this.handleLocationChange}
+              value={this.state.locationValue}
+            />
+            <button className="button" onClick={this.handleLocationSubmit}>
+              Submit
+            </button>
+          </form>
+        </Fragment>
+      );
+    }
   }
 }
 
